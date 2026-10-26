@@ -1,10 +1,40 @@
-# RAZORBS - Testes JUnit
-Projeto Java 17 para abrir no NetBeans como **projeto Maven existente**. Reutiliza as classes do RAZORBS Refatorado e inclui quatro testes JUnit 5 independentes de banco de dados.
+# RAZORBS - Sistema de Barbearia
 
-## Executar
-No NetBeans: Arquivo > Abrir Projeto > selecione RAZORBS_Testes_JUnit; clique com o botão direito > Testar. Ou no terminal, dentro da pasta: `mvn test`.
+## Sobre o projeto
 
-O Maven precisa de acesso à internet na primeira execução para baixar o JUnit. O resultado esperado é **Tests run: 4, Failures: 0, Errors: 0**. Não foi possível executar JUnit neste ambiente sem a dependência instalada; execute no seu computador e capture o resultado.
+O RAZORBS é um sistema de gerenciamento de barbearia desenvolvido em Java durante o Projeto Integrador do curso Técnico em Desenvolvimento de Sistemas do Senac.
 
-## GitHub
-Copie a pasta RAZORBS_Testes_JUnit para o repositório da etapa anterior, faça `git add .`, `git commit -m "Adiciona testes JUnit e plano de testes"`, `git push` e tire um print da página do repositório mostrando a pasta de testes. Inclua esse print na pasta `Evidencia_GitHub` e compacte novamente a entrega.
+O projeto começou como uma aplicação desktop utilizando Java Swing e foi refatorado para separar as regras de negócio da interface, facilitando sua futura implementação como sistema web.
+
+## Funcionalidades
+
+- Cadastro e listagem de clientes.
+- Gerenciamento de agendamentos.
+- Validação de datas e horários.
+- Bloqueio de agendamentos em horários duplicados.
+- Bloqueio de agendamentos em datas passadas.
+
+## Tecnologias utilizadas
+
+- Java
+- Apache NetBeans
+- Git e GitHub
+- JUnit para testes unitários
+
+## Refatoração
+
+Foram aplicados conceitos de SOLID, principalmente o princípio da responsabilidade única, organizando melhor as classes e separando as funcionalidades do sistema.
+
+## Testes
+
+O projeto conta com testes automatizados utilizando JUnit para verificar algumas regras de negócio, além de um plano de testes manuais para as principais funcionalidades.
+
+## Objetivo
+
+Preparar o sistema desktop para uma futura versão web, mantendo o código organizado, reutilizável e de fácil manutenção.
+
+## Autor
+
+Juan Gabriel Varela Sousa
+
+Projeto Integrador - Senac
